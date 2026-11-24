@@ -1,0 +1,138 @@
+        .section-title {
+            text-align: center;
+            margin: 10px auto 20px auto;
+            font-size: 18px;
+            letter-spacing: 3px;
+            border-bottom: 3px solid #d1a94b; 
+            padding-bottom: 8px;  
+            display: table;
+        }  
+       
+        .charts {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chart {
+            display: inline-block;
+            width: 310px;
+            margin: 10px;
+            padding: 16px;
+            background: white;
+            border-top: 4px solid #d1a94b;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            /* vertical-align: top; */
+        }
+        .chart h3 { 
+            margin: 0; 
+            font-size: 16px; 
+        }
+        .chart p { 
+            margin: 18px 0 0 0; 
+            font-size: 13px; 
+            color: #55646b; 
+        }
+
+        .pie {
+            width: 140px;
+            height: 140px;
+            margin: -18px auto -22px auto;
+            border-radius: 50%;
+            transform: perspective(600px) rotateX(55deg);
+            box-shadow:
+                0 2px 0 #14363f, 0 4px 0 #14363f, 0 6px 0 #14363f, 0 8px 0 #a9d1dd,
+                0 10px 0 #14363f, 0 12px 0 #14363f, 0 14px 0 #14363f,
+                0 28px 25px rgba(0, 0, 0, 0.35);
+            transition: transform 0.7s; 
+        }
+        
+        .chart:hover .pie {
+            transform: perspective(600px) rotateX(35deg);
+        }
+
+       
+        .id-cards {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .id-card {
+            display: inline-block;
+            width: 230px;
+            margin: 8px;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+            text-align: left;
+            cursor: pointer;
+            color: #1f2a30;
+        }
+        .id-card:hover { 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28); 
+        }
+        .name { 
+            font-size: 17px; 
+            font-weight: 600; 
+        }
+        .status {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 3px 12px;
+            background: white;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .green  { background: #d9f5e1; border-left: 8px solid #27ae60; }   
+        .yellow { background: #fff4b8; border-left: 8px solid #f1c40f; }   
+        .red    { background: #ffdcdc; border-left: 8px solid #e74c3c; }   
+
+        
+        .form-box {
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 26px;
+            background: white;
+            border-top: 4px solid #d1a94b;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        .form-box h2 { margin-top: 0; }
+        label {
+            display: block;
+            margin-top: 14px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-family: inherit;
+            border: 1px solid #d9cfba;
+            border-radius: 6px;
+        }
+        button {
+            margin: 16px 8px 0 0;
+            padding: 11px 20px;
+            background: #1f5f6b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button.back {
+            margin: 0 0 16px 0;
+            padding: 0;
+            background: none;
+            color: #1f5f6b;
+            font-weight: 600;
+        }
+        
+        table { width: 100%; margin-top: 10px; }
+        th, td { padding: 9px; border: 1px solid #d9cfba; text-align: left; }
+        th { background: #1f5f6b; color: white; }
+        .message { color: #1f8a4c; font-weight: 600; }

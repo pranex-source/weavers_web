@@ -1,0 +1,49 @@
+    .illustration {
+        max-width: 760px;
+        margin: 0 auto 30px auto;
+    }
+    .illustration img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .sub-title {
+        text-align: center;
+        margin: 26px 0 8px 0;
+        font-size: 15px;
+        color: #55646b;
+    }
+
+    .concepts { 
+        text-align: center; 
+    }
+
+    .concept {
+        display: inline-block;
+        width: 210px;
+        margin: 8px;
+        padding: 14px;
+        background: white;
+        border-left: 6px solid #1f5f6b;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .concept h4 { 
+        margin: 0 0 4px 0; 
+        font-size: 15px; 
+    }
+    
+    .concept p { 
+        margin: 0; 
+        font-size: 13px; 
+        color: #55646b; 
+    }
+    .concept.idea {
+        background: #f4f6f7;
+        border-left: 6px dashed #9aa8ae;
+    }

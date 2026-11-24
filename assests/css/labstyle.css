@@ -1,0 +1,69 @@
+/* CHANGED: wider page (was 700px) */
+main { 
+    max-width: 1000px; 
+    margin: 32px auto; 
+    padding: 0 16px; 
+}
+
+/* CHANGED: .history is only a container now (no white box, no padding) */
+.history { 
+    text-align: center; 
+}
+
+/* NEW: name and ID bar at the top */
+.info-bar {
+    background: white;
+    border-top: 4px solid #d1a94b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 20px;
+}
+.info-bar h3 { 
+    margin: 0 0 8px 0; 
+}
+.info-bar span { 
+    display: inline-block; 
+    margin: 0 18px; 
+}
+
+/* NEW: one month card. The cards sit side by side (left to right) */
+.month-card {
+    display: inline-block;
+    width: 31%;
+    margin: 1%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-top: 4px solid #d1a94b;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    vertical-align: top;
+}
+.month-card h3 { 
+    margin-top: 0; 
+}
+.month-card p { 
+    margin-bottom: 10px; 
+}
+
+/* CHANGED: width 610px became 100%, so the table fits inside the small card */
+table { 
+    width: 100%; 
+    margin-top: 8px; 
+}
+th, td { 
+    border: 1px solid #d9cfba; 
+    padding: 8px; 
+    text-align: left; 
+}
+th { 
+    background: #1f5f6b; 
+    color: white; 
+}
+
+/* NEW (optional): on a phone, the cards go one under another */
+@media (max-width: 700px) {
+    .month-card { width: 94%; }
+}

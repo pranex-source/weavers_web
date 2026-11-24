@@ -1,0 +1,38 @@
+Co-Operative Handloom Production & Sales Automation  or Mater Weavers Automation
+-------------------------------------------------------------------------------------------------------------------------
+
+Administration Team (Head, Manager & Accountant)
+
+	Profile Management for Admin team 
+
+	1.Add a new employee (Whenever join in the organization)
+	2.Update
+	3.View (All emp/ Individual)
+	4.Delete
+	5. Salary management of employees
+
+
+	Profile Management for Labours
+
+	1.Add a new employee (Whenever a new labour join in the organization)
+	2.Update
+	3.View (All emp/ Individual)
+	4.Delete
+
+
+	Expenses of Organization 
+
+	1. Lease / Rental Basic
+		Lease------------> Duration and Amount
+		Rental------------> Advance (Once Given) Rental-----> monthly---->Date and Rent amount
+	2. Electricity
+	3. Phone and Internet Charge
+	4. Employees Salary
+
+	Raw Material Purchase for Production of Sarees
+	
+	Issue Raw material to Labors for making Sarees via Manager
+
+	Thari Cooly Distribution
+
+	Stock

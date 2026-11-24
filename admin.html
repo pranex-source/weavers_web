@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Page - Handloom Automation</title>
+    <link rel="stylesheet" href="assests/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assests/css/adstyle.css" type="text/css">
+    <link rel="icon" type="image/png" href="fav.jpg">
+</head>
+<body>
+
+    <header>
+        <h1>Handloom Automation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Manager Dashboard</h2>
+        <div class="zari"></div>
+        <p>Track raw material, tasks and labour work in one place.</p>
+    </div>
+
+    <main>
+        <div id="dashboard">
+            <div class="charts">
+                <div class="chart"><h3>Raw Material</h3><div class="pie" id="pie1"></div><p id="text1"></p></div>
+                <div class="chart"><h3>Task Panel</h3><div class="pie" id="pie2"></div><p id="text2"></p></div>
+                <div class="chart"><h3>Labour Utilization</h3><div class="pie" id="pie3"></div><p id="text3"></p></div>
+            </div>
+            <h2 class="section-title">LABOURS</h2>
+            <div class="id-cards" id="cards"></div>
+        </div>
+
+        <div id="assign" style="display:none">
+            <button class="back" id="backBtn">&lt; Back to dashboard</button>
+            <div class="form-box">
+                <h2>Assign Work</h2>
+                <p>Labour Name: <b id="aName"></b></p>
+                <p>Labour ID: <b id="aId"></b></p>
+
+                <label>Material type</label>
+                <select id="aType"><option>Silk</option><option>Cotton</option></select>
+
+                <label>Raw material (number of sarees)</label>
+                <input id="aSarees" type="number" value="10" readonly>
+
+                <label>Assigned date</label>
+                <input id="aAssigned" type="date">
+
+                <label>Completion date</label>
+                <input id="aCompletion" type="date">
+
+                <button id="saveBtn">Save assignment</button>
+                <button id="doneBtn">Mark completed</button>
+                <button id="closeBtn">Close month</button>
+                <p class="message" id="aMessage"></p>
+
+                <h3 style="margin-top:22px">Salary</h3>
+                <table id="aSalary"></table>
+                <label for="payDate">Payment date</label>
+                <input id="payDate" type="date">
+                <label for="payAmount">Amount</label>
+                <input id="payAmount" type="number">
+                <button id="payBtn">Add payment</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    &copy; 2026 Co-Operative Handloom Automation System. All Rights Reserved.
+    | <a href="#" id="resetLink" style="color:#f3e6c0">Reset data</a>  
+    </footer>
+
+    <script id="labourData" type="application/json">
+    [
+    { "id": "H001", "name": "Praveen", "materialType": "Silk", "sarees": 85, "assignedDate": "2026-11-22", "completionDate": "2026-11-23", "completed": false,
+      "salary": [],
+      "history": [
+        { "month": "October 2026", "materialType": "Silk", "sarees": 10, "assignedDate": "2026-10-01", "completionDate": "2026-10-26", "salary": [ { "date": "2026-07-27", "amount": 9000 } ] },
+        { "month": "September 2026", "materialType": "Cotton", "sarees": 10, "assignedDate": "2026-09-02", "completionDate": "2026-09-27", "salary": [ { "date": "2026-08-28", "amount": 9500 } ] }
+              ] },
+    { "id": "H002", "name": "Deepika", "materialType": "Cotton", "sarees": 10, "assignedDate": "2026-09-25", "completionDate": "2026-10-20", "completed": true,
+      "salary": [ { "date": "2026-10-21", "amount": 9000 } ],
+      "history": [
+        { "month": "August 2026", "materialType": "Cotton", "sarees": 10, "assignedDate": "2026-08-03", "completionDate": "2026-08-24", "salary": [ { "date": "2026-08-25", "amount": 8500 } ] },
+        { "month": "July 2026", "materialType": "Cotton", "sarees": 10, "assignedDate": "2026-07-02", "completionDate": "2026-07-25", "salary": [ { "date": "2026-07-26", "amount": 8000 } ] }
+      ] },
+    { "id": "H003", "name": "Kailash", "materialType": "", "sarees": 0, "assignedDate": "", "completionDate": "", "completed": false, "salary": [], "history": [] },
+    { "id": "H004", "name": "Pradeep", "materialType": "", "sarees": 0, "assignedDate": "", "completionDate": "", "completed": false, "salary": [], "history": [] },
+    { "id": "H005", "name": "Thulasi", "materialType": "", "sarees": 0, "assignedDate": "", "completionDate": "", "completed": false, "salary": [], "history": [] },
+    { "id": "H006", "name": "Mani", "materialType": "", "sarees": 0, "assignedDate": "", "completionDate": "", "completed": false, "salary": [], "history": [] },
+    { "id": "H007", "name": "Senthil", "materialType": "Silk", "sarees": 10, "assignedDate": "2026-09-28", "completionDate": "2026-10-26", "completed": true,
+      "salary": [ { "date": "2026-10-27", "amount": 11000 } ],
+      "history": [
+        { "month": "August 2026", "materialType": "Silk", "sarees": 10, "assignedDate": "2026-08-05", "completionDate": "2026-08-28", "salary": [ { "date": "2026-08-29", "amount": 10500 } ] },
+        { "month": "July 2026", "materialType": "Silk", "sarees": 10, "assignedDate": "2026-07-04", "completionDate": "2026-07-27", "salary": [ { "date": "2026-07-28", "amount": 10000 } ] }
+      ] },
+    { "id": "H008", "name": "Ajith", "materialType": "", "sarees": 0, "assignedDate": "", "completionDate": "", "completed": false, "salary": [], "history": [] }
+    ]
+    </script> 
+    <script src="assests/js/adjs2.js"></script>
+</body>
+</html>

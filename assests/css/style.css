@@ -1,0 +1,183 @@
+        * { 
+            box-sizing: border-box; 
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            color: #1f2a30;
+            background-color: #f7f1e6;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 4 L36 20 L20 36 L4 20 Z' fill='none' stroke='%23c9a24a' stroke-width='1' opacity='.22'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23c9a24a' opacity='.25'/%3E%3C/svg%3E");
+        }
+
+        header {
+            background: #0b414b;
+            padding: 16px 40px;
+            border-bottom: 4px solid #d1a94b;
+            display: flex;                    
+            justify-content: space-between;   
+            align-items: center;              
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 500;
+            color: white;
+        }
+
+        header nav a {
+            margin-left: 22px;
+            color: #f3e6c0;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+
+        .hero {
+            padding: 55px 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 6px solid #d1a94b;
+            background-color: #17505c;
+            background-image:
+                url("saree.jpg"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 4 L36 20 L20 36 L4 20 Z' fill='none' stroke='%23e0c27a' stroke-width='1.5' opacity='.5'/%3E%3Ccircle cx='20' cy='20' r='3' fill='%23e0c27a' opacity='.6'/%3E%3C/svg%3E"),
+                linear-gradient(135deg, #17505c, #2c5d8c);
+            background-size: cover, 40px 40px, cover;
+            background-position: center;
+        }
+        .hero h2 {
+            margin: 0 0 8px 0;
+            font-size: 32px;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            margin: 0;
+            font-size: 15px;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+        }
+        .hero .zari {
+            width: 80px;
+            height: 3px;
+            margin: 14px auto 12px auto;
+            background: #e0c27a;
+        }
+
+
+         .portal-container {
+            max-width: 1100px;
+            margin: 48px auto;
+            padding: 0 16px;
+            
+        }
+
+        .portal-container .zari {
+            width: 80px;
+            height: 3px;
+            margin: 0px auto 15px auto;
+            background: #e0c27a;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1b4d3e;
+        }
+
+         .cards-wrapper {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            
+        }
+
+        .portal-card {
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 320px;
+            padding: 32px;
+            text-align: center;
+            border-top: 4px solid #e0c27a; 
+            background: white;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .portal-card h3 {
+            color: #1b4d3e;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+
+        .portal-card p {
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.5;
+            font-size: 15.2px;
+        }
+        .icon {
+            font-size: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 12.8px 28.8px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+         .btn-admin{
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 12.8px 28.8px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #219150;
+        }
+
+        .btn-admin {
+            background-color: #e67e22;
+        }
+
+        .btn-admin:hover {
+            background-color: #d35400;
+        }
+
+        
+        main {
+            width: 92%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+            footer {
+            padding: 18px;
+            background: #0b414b;
+            border-top: 4px solid #d1a94b;
+            color: #f3e6c0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* ---------- Phones ---------- 
+        @media (max-width: 700px) {
+            .chart { width: 94%; }
+            header h1, header nav { float: none; }
+            header { text-align: center; padding: 14px 16px; }
+            header nav { padding-top: 8px; }
+            header nav a { margin: 0 10px; }
+            .banner h2 { font-size: 26px; }
+        }*/
